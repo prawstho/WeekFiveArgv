@@ -13,31 +13,30 @@
  * 09 Jan 2022, PJR, File created
  *
  *************************/
-global.DEBUG = true;
+global.DEBUG = false;
 const fs = require("fs");
-// const { initializeApp } = require('./init.js');
-// const { configApp } = require('./config.js');
-// const { tokenApp } = require('./token.js');
+const { initializeApp } = require('./init.js');
+const { configApp } = require('./config.js');
+const { tokenApp } = require('./token.js');
 
 const myArgs = process.argv.slice(2);
-if(DEBUG) 
-    if(myArgs.length >= 1) console.log('the myapp.args: ', myArgs);
+if(DEBUG) if(myArgs.length >= 1) console.log('the myapp.args: ', myArgs);
 
 switch (myArgs[0]) {
     case 'init':
     case 'i':
         if(DEBUG) console.log(myArgs[0], ' - initialize the app.');
-        // initializeApp();
+        initializeApp();
         break;
     case 'config':
     case 'c':
         if(DEBUG) console.log(myArgs[0], ' - display the configuration file');
-        // configApp();
+        configApp();
         break;
     case 'token':
     case 't':
         if(DEBUG) console.log(myArgs[0], ' - generate a user token');
-        // tokenApp();
+        tokenApp();
         break;  
     case '--help':
     case '--h':

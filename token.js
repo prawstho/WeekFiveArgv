@@ -17,7 +17,7 @@ function tokenApp() {
         if(DEBUG) console.log('token.newToken() --new');
 
         break;
-    case '--upd':
+    case '--upd':   
         if(DEBUG) console.log('token.updateToken()');
     //    updateToken(myArgs);
         break;

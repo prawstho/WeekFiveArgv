@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/prawstho/WeekFiveArgv#readme",
   "dependencies": {
+    "crc": "^4.3.2",
     "date-fns": "^2.29.3",
     "uuid": "^9.0.0"
   }

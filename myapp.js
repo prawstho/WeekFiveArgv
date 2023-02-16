@@ -13,7 +13,7 @@
  * 09 Jan 2022, PJR, File created
  *
  *************************/
-global.DEBUG = false;
+global.DEBUG = true;
 
 const fs = require("fs");
 const { initializeApp } = require('./init.js');
